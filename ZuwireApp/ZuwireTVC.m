@@ -29,6 +29,7 @@
                 if ([segue.destinationViewController respondsToSelector:@selector(setWireURL:)]) {
                     NSURL *url = [NSURL URLWithString:self.wires[indexPath.row][@"id"]];
                     [segue.destinationViewController performSelector:@selector(setWireURL:) withObject:url];
+                    [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
                 }
             }
         }

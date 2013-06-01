@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vv0-6l-517">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uDN-ZL-hhH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="Ece-a5-HlJ" customClass="LatestWiresTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mi9-cP-A1X">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -35,14 +35,56 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HtZ-iM-412" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="84"/>
+            <point key="canvasLocation" x="1114" y="84"/>
+        </scene>
+        <!--Table View Controller - Root View Controller-->
+        <scene sceneID="xWl-Al-tcd">
+            <objects>
+                <tableViewController id="EcS-Um-0Mf" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lfl-TO-vRw">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="UHr-H0-9tP">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="uin-1t-4ub"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuS-6G-9bB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="719"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="fFE-uW-YwS">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="KPq-E9-LXd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0nQ-Pq-Bb9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w8k-J7-dcr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EcS-Um-0Mf" kind="relationship" relationship="rootViewController" id="kde-8G-Dv8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfw-43-Uig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="719"/>
         </scene>
         <!--Wire View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="WireViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-dt-kqz">
@@ -68,27 +110,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="76"/>
+            <point key="canvasLocation" x="1608" y="76"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Nav Controller - Wires-->
         <scene sceneID="T5f-Ai-Pqf">
             <objects>
-                <navigationController id="Vv0-6l-517" sceneMemberID="viewController">
+                <navigationController id="Vv0-6l-517" customClass="mainNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wires" image="wire_active_2x.png" id="IQu-nI-70b"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="UoE-eO-lJB" customClass="mainTitleBar"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Oc-t4-oao">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="mainTitleBar" destination="UoE-eO-lJB" id="xCQ-iG-PhA"/>
                         <segue destination="Ece-a5-HlJ" kind="relationship" relationship="rootViewController" id="WBK-1P-95F"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNx-ST-EsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="588" y="84"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Nds-67-vbc">
+            <objects>
+                <tabBarController id="uDN-ZL-hhH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5i8-DB-cMY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vv0-6l-517" kind="relationship" relationship="viewControllers" id="BL1-Rd-2wO"/>
+                        <segue destination="KPq-E9-LXd" kind="relationship" relationship="viewControllers" id="lhf-AE-cNM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ial-gW-TmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="62" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wire_active_2x.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="LatestWiresTVC" superclassName="ZuwireTVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LatestWiresTVC.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="WireViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WireViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="wirePostLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ZuwireTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZuwireTVC.h"/>
+        </class>
+        <class className="mainNavController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mainNavController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainTitleBar" candidateClass="UINavigationItem"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

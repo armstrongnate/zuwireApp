@@ -13,7 +13,6 @@
 + (NSDictionary *)getWireWithId:(NSString *)wireId
 {
     NSString *wiresUrlString = [NSString stringWithFormat:@"%@/%@", @"http://zuwire.com.dev/api/v1/wires", wireId];
-    NSLog(wiresUrlString);
     NSURL *wiresUrl = [NSURL URLWithString:wiresUrlString];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:wiresUrl];
