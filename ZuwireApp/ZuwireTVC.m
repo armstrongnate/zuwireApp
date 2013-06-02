@@ -55,7 +55,8 @@
     
     cell.textLabel.text = [self titleForRow:indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:12.0];
-    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.wires[indexPath.row][@"user_avatar_url"]]]];
+    cell.imageView.image = image;
     return cell;
 }
 
