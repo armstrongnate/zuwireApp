@@ -10,4 +10,5 @@
 
 @interface WiresFetcher : NSObject
 + (NSDictionary *)getWireWithId:(NSString *)wireId;
++ (NSArray *)getLatestWires;
 @end

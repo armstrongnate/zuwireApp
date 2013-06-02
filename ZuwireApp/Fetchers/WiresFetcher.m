@@ -24,4 +24,17 @@
     return dataDictionary;
 }
 
++ (NSArray *)getLatestWires
+{
+    NSURL *wiresUrl = [NSURL URLWithString:@"http://zuwire.com.dev/api/v1/wires"];
+
+    NSData *jsonData = [NSData dataWithContentsOfURL:wiresUrl];
+
+    NSError *error = nil;
+
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+
+    return dataDictionary[@"wires"];
+}
+
 @end
