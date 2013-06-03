@@ -14,6 +14,12 @@
 
 @implementation ZuwireTVC
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.navigationItem.title = @"Zuwire";
+}
+
 - (void)setWires:(NSArray *)wires
 {
     _wires = wires;

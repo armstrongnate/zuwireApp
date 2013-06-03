@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface mainNavController : UINavigationController
-@property (strong, nonatomic) IBOutlet UINavigationItem *mainTitleBar;
 
 @end

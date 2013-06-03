@@ -118,14 +118,15 @@
                 <navigationController id="Vv0-6l-517" customClass="mainNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Wires" image="wire_active_2x.png" id="IQu-nI-70b"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="UoE-eO-lJB" customClass="mainTitleBar"/>
+                    <navigationItem key="navigationItem" id="UoE-eO-lJB">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="FVu-DN-H4I"/>
+                    </navigationItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Oc-t4-oao">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="mainTitleBar" destination="UoE-eO-lJB" id="xCQ-iG-PhA"/>
                         <segue destination="Ece-a5-HlJ" kind="relationship" relationship="rootViewController" id="WBK-1P-95F"/>
                     </connections>
                 </navigationController>
@@ -156,29 +157,6 @@
     <resources>
         <image name="wire_active_2x.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="LatestWiresTVC" superclassName="ZuwireTVC">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LatestWiresTVC.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="WireViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WireViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="wirePostLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ZuwireTVC" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZuwireTVC.h"/>
-        </class>
-        <class className="mainNavController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/mainNavController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainTitleBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
