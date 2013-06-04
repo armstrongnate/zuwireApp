@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 CustomBit. All rights reserved.
 //
 
-#import "ZuwireTVC.h"
+#import <UIKit/UIKit.h>
 
-@interface LatestWiresTVC : ZuwireTVC
+@interface LatestWiresTVC : UITableViewController
+
+@property (nonatomic, strong) NSArray *wires; // of NSDictionary
 
 @end

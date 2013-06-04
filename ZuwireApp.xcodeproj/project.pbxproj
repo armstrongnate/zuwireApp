@@ -19,7 +19,6 @@
 		43BBE83D1756EDBC00DDCF70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BBE83B1756EDBC00DDCF70 /* MainStoryboard.storyboard */; };
 		43BBE8481756EEA100DDCF70 /* WireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE8471756EEA100DDCF70 /* WireViewController.m */; };
 		43BBE84B1757038E00DDCF70 /* FirstWireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE84A1757038E00DDCF70 /* FirstWireViewController.m */; };
-		43BBE84E175705C900DDCF70 /* ZuwireTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE84D175705C900DDCF70 /* ZuwireTVC.m */; };
 		43BBE85117570AB000DDCF70 /* LatestWiresTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE85017570AB000DDCF70 /* LatestWiresTVC.m */; };
 		43BBE8541757137E00DDCF70 /* WiresFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE8531757137E00DDCF70 /* WiresFetcher.m */; };
 		43BBE8591759B40F00DDCF70 /* wire_active_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BBE8581759B40F00DDCF70 /* wire_active_2x.png */; };
@@ -45,8 +44,6 @@
 		43BBE8471756EEA100DDCF70 /* WireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireViewController.m; sourceTree = "<group>"; };
 		43BBE8491757038E00DDCF70 /* FirstWireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstWireViewController.h; sourceTree = "<group>"; };
 		43BBE84A1757038E00DDCF70 /* FirstWireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstWireViewController.m; sourceTree = "<group>"; };
-		43BBE84C175705C900DDCF70 /* ZuwireTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZuwireTVC.h; sourceTree = "<group>"; };
-		43BBE84D175705C900DDCF70 /* ZuwireTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZuwireTVC.m; sourceTree = "<group>"; };
 		43BBE84F17570AB000DDCF70 /* LatestWiresTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestWiresTVC.h; sourceTree = "<group>"; };
 		43BBE85017570AB000DDCF70 /* LatestWiresTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestWiresTVC.m; sourceTree = "<group>"; };
 		43BBE8521757137E00DDCF70 /* WiresFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WiresFetcher.h; path = Fetchers/WiresFetcher.h; sourceTree = "<group>"; };
@@ -104,8 +101,6 @@
 				43BBE85E1759BB2400DDCF70 /* mainNavController.m */,
 				43BBE8581759B40F00DDCF70 /* wire_active_2x.png */,
 				43BBE83B1756EDBC00DDCF70 /* MainStoryboard.storyboard */,
-				43BBE84C175705C900DDCF70 /* ZuwireTVC.h */,
-				43BBE84D175705C900DDCF70 /* ZuwireTVC.m */,
 				43BBE84F17570AB000DDCF70 /* LatestWiresTVC.h */,
 				43BBE85017570AB000DDCF70 /* LatestWiresTVC.m */,
 				43BBE8521757137E00DDCF70 /* WiresFetcher.h */,
@@ -206,7 +201,6 @@
 				43BBE8341756EDBC00DDCF70 /* AppDelegate.m in Sources */,
 				43BBE8481756EEA100DDCF70 /* WireViewController.m in Sources */,
 				43BBE84B1757038E00DDCF70 /* FirstWireViewController.m in Sources */,
-				43BBE84E175705C900DDCF70 /* ZuwireTVC.m in Sources */,
 				43BBE85117570AB000DDCF70 /* LatestWiresTVC.m in Sources */,
 				43BBE8541757137E00DDCF70 /* WiresFetcher.m in Sources */,
 				43BBE85F1759BB2400DDCF70 /* mainNavController.m in Sources */,
@@ -332,6 +326,7 @@
 				43BBE8451756EDBC00DDCF70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
