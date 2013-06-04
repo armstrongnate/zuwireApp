@@ -41,7 +41,7 @@
         <scene sceneID="fFE-uW-YwS">
             <objects>
                 <navigationController definesPresentationContext="YES" id="KPq-E9-LXd" customClass="mainNavController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="0nQ-Pq-Bb9"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_icon.png" id="0nQ-Pq-Bb9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w8k-J7-dcr">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -159,6 +159,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="profile_icon.png" width="16" height="16"/>
         <image name="wire_active_2x.png" width="30" height="30"/>
     </resources>
     <classes>

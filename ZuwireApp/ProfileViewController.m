@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"Profile";
 	// Do any additional setup after loading the view.
     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:CURRENT_AVATAR_URL]]];
     self.profilePicture.image = image;
