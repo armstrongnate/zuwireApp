@@ -91,7 +91,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-dt-kqz">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-dt-kqz">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="O24-hG-ikm"/>
                                 </constraints>
@@ -159,7 +159,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="profile_icon.png" width="16" height="16"/>
+        <image name="profile_icon.png" width="30" height="30"/>
         <image name="wire_active_2x.png" width="30" height="30"/>
     </resources>
     <classes>
