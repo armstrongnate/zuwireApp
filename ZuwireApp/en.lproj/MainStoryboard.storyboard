@@ -37,47 +37,51 @@
             </objects>
             <point key="canvasLocation" x="1114" y="84"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
-        <scene sceneID="xWl-Al-tcd">
-            <objects>
-                <tableViewController id="EcS-Um-0Mf" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lfl-TO-vRw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="UHr-H0-9tP">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="uin-1t-4ub"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kuS-6G-9bB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1128" y="719"/>
-        </scene>
-        <!--Navigation Controller - Item-->
+        <!--Main Nav Controller - Profile-->
         <scene sceneID="fFE-uW-YwS">
             <objects>
-                <navigationController definesPresentationContext="YES" id="KPq-E9-LXd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0nQ-Pq-Bb9"/>
+                <navigationController definesPresentationContext="YES" id="KPq-E9-LXd" customClass="mainNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="0nQ-Pq-Bb9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w8k-J7-dcr">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="EcS-Um-0Mf" kind="relationship" relationship="rootViewController" id="kde-8G-Dv8"/>
+                        <segue destination="YnR-cN-3QB" kind="relationship" relationship="rootViewController" id="Nyf-qX-J1K"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfw-43-Uig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="594" y="719"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="BJG-z3-Ak3">
+            <objects>
+                <viewController id="YnR-cN-3QB" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZZz-cQ-ZRj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnS-Vm-qar">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2vs-zK-vj6"/>
+                                    <constraint firstAttribute="height" constant="200" id="62n-iA-yNk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WnS-Vm-qar" firstAttribute="top" secondItem="ZZz-cQ-ZRj" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7ks-6g-VTd"/>
+                            <constraint firstItem="WnS-Vm-qar" firstAttribute="centerX" secondItem="ZZz-cQ-ZRj" secondAttribute="centerX" type="default" id="jko-zD-HNK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HLD-QM-Ci9"/>
+                    <connections>
+                        <outlet property="profilePicture" destination="WnS-Vm-qar" id="q2e-b9-Ezg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DhP-Xk-WFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="716"/>
         </scene>
         <!--Wire View Controller-->
         <scene sceneID="5">
@@ -146,7 +150,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Vv0-6l-517" kind="relationship" relationship="viewControllers" id="BL1-Rd-2wO"/>
-                        <segue destination="KPq-E9-LXd" kind="relationship" relationship="viewControllers" id="lhf-AE-cNM"/>
+                        <segue destination="KPq-E9-LXd" kind="relationship" relationship="viewControllers" id="T2g-X4-Gwq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ial-gW-TmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -157,6 +161,29 @@
     <resources>
         <image name="wire_active_2x.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="LatestWiresTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LatestWiresTVC.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="profilePicture" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="WireViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WireViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="wirePostLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="mainNavController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mainNavController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
