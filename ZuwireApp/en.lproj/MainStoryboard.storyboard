@@ -122,16 +122,13 @@
                 <navigationController id="Vv0-6l-517" customClass="mainNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Wires" image="wire_active_2x.png" id="IQu-nI-70b"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="UoE-eO-lJB">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="FVu-DN-H4I"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="UoE-eO-lJB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Oc-t4-oao">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="composeWireButton" destination="FVu-DN-H4I" id="3x1-0X-qk7"/>
                         <segue destination="Ece-a5-HlJ" kind="relationship" relationship="rootViewController" id="WBK-1P-95F"/>
                     </connections>
                 </navigationController>
@@ -184,9 +181,6 @@
         </class>
         <class className="mainNavController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/mainNavController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="composeWireButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
