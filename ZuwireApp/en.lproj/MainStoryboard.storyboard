@@ -91,25 +91,67 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-dt-kqz">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wire post content" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ZVy-dt-kqz">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="O24-hG-ikm"/>
+                                    <constraint firstAttribute="height" constant="63" id="47x-VO-1Xe"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wire Stats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-Id-uVA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="cCU-pT-ZiM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Full Name" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8G-ov-Wz0">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Handle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQB-aJ-ExE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mH2-Ed-l8k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Viu-Z9-hhD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="57Z-Y5-C96"/>
+                                    <constraint firstAttribute="width" constant="53" id="y69-uR-t7Z"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZVy-dt-kqz" firstAttribute="top" secondItem="3" secondAttribute="top" constant="34" id="Gi2-Mq-mw9"/>
+                            <constraint firstItem="JQB-aJ-ExE" firstAttribute="leading" secondItem="Viu-Z9-hhD" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="A3w-Pc-5vw"/>
+                            <constraint firstItem="wnr-Id-uVA" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="BtO-qD-sqC"/>
+                            <constraint firstItem="E8G-ov-Wz0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Dea-L6-mHM"/>
+                            <constraint firstAttribute="trailing" secondItem="wnr-Id-uVA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GII-xk-XYw"/>
+                            <constraint firstItem="JQB-aJ-ExE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="37" id="JT4-kt-m6B"/>
+                            <constraint firstItem="ZVy-dt-kqz" firstAttribute="top" secondItem="3" secondAttribute="top" constant="71" id="aGZ-G6-pKr"/>
+                            <constraint firstItem="Viu-Z9-hhD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="etu-wg-Zfh"/>
+                            <constraint firstItem="E8G-ov-Wz0" firstAttribute="leading" secondItem="Viu-Z9-hhD" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gnv-Lb-2jv"/>
                             <constraint firstAttribute="trailing" secondItem="ZVy-dt-kqz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="j1Z-dJ-Jxo"/>
+                            <constraint firstItem="wnr-Id-uVA" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="siM-bt-NkV"/>
+                            <constraint firstAttribute="trailing" secondItem="E8G-ov-Wz0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="t01-Pa-nea"/>
                             <constraint firstItem="ZVy-dt-kqz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wrZ-Hs-4GJ"/>
+                            <constraint firstAttribute="trailing" secondItem="JQB-aJ-ExE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xC7-0z-wSG"/>
+                            <constraint firstItem="Viu-Z9-hhD" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="xi3-bN-qdG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QJe-fe-AUP"/>
                     <connections>
+                        <outlet property="userAvatar" destination="Viu-Z9-hhD" id="67d-YB-mcI"/>
+                        <outlet property="userFullName" destination="E8G-ov-Wz0" id="Kv4-wa-26n"/>
+                        <outlet property="userHandle" destination="JQB-aJ-ExE" id="TI1-rH-OsV"/>
                         <outlet property="wirePostLabel" destination="ZVy-dt-kqz" id="oli-YS-LsH"/>
+                        <outlet property="wireStats" destination="wnr-Id-uVA" id="Iie-lK-GVP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -176,7 +218,11 @@
         <class className="WireViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WireViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="userAvatar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="userFullName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="userHandle" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="wirePostLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="wireStats" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="mainNavController" superclassName="UINavigationController">

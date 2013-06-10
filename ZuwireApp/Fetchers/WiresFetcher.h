@@ -14,4 +14,5 @@
 
 + (NSDictionary *)getWireWithId:(NSString *)wireId;
 + (NSArray *)getLatestWires;
++ (UIImage *)getUserAvatar:(NSString *)withUrl;
 @end

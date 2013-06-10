@@ -37,4 +37,10 @@
     return dataDictionary[@"wires"];
 }
 
++ (UIImage *)getUserAvatar:(NSString *)userAvatarUrl;
+{
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:userAvatarUrl]]];
+    return image;
+}
+
 @end

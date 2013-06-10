@@ -11,6 +11,10 @@
 
 @interface WireViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *wirePostLabel;
+@property (strong, nonatomic) IBOutlet UILabel *wireStats;
+@property (strong, nonatomic) IBOutlet UILabel *userFullName;
+@property (strong, nonatomic) IBOutlet UILabel *userHandle;
+@property (strong, nonatomic) IBOutlet UIImageView *userAvatar;
 @end
 
 @implementation WireViewController
@@ -26,6 +30,10 @@
 {
     self.wirePostLabel.text = @"";
     self.wirePostLabel.text = self.wireDictionary[@"post"];
+    self.userFullName.text = self.wireDictionary[@"user_full_name"];
+    self.userHandle.text = [NSString stringWithFormat:@"@%@", self.wireDictionary[@"user_handle"]];
+    self.userAvatar.image = [WiresFetcher getUserAvatar:self.wireDictionary[@"user_avatar_url"]];
+    self.wireStats.text = @"Props: 10 Comments: 5";
 }
 
 - (void)viewDidLoad
