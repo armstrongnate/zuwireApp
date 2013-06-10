@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface mainNavController : UINavigationController
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *composeWireButton;
 
 @end

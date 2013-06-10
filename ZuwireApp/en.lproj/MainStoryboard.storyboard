@@ -131,6 +131,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="composeWireButton" destination="FVu-DN-H4I" id="3x1-0X-qk7"/>
                         <segue destination="Ece-a5-HlJ" kind="relationship" relationship="rootViewController" id="WBK-1P-95F"/>
                     </connections>
                 </navigationController>
@@ -183,6 +184,9 @@
         </class>
         <class className="mainNavController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/mainNavController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="composeWireButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

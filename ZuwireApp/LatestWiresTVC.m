@@ -48,7 +48,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [self.wires count];
 }
 
 - (NSString *)titleForRow:(NSUInteger)row
