@@ -18,13 +18,14 @@
 - (void)setWireURL:(NSURL *)wireURL
 {
     _wireURL = wireURL;
+    self.wireDictionary = [WiresFetcher getWireWithId:[self.wireURL absoluteString]];
     [self resetWireShow];
 }
 
 - (void)resetWireShow
 {
     self.wirePostLabel.text = @"";
-    self.wirePostLabel.text = [WiresFetcher getWireWithId:[self.wireURL absoluteString]][@"post"];
+    self.wirePostLabel.text = self.wireDictionary[@"post"];
 }
 
 - (void)viewDidLoad

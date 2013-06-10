@@ -11,5 +11,6 @@
 @interface WireViewController : UIViewController
 
 @property (nonatomic, strong) NSURL *wireURL;
+@property (nonatomic, strong) NSDictionary *wireDictionary;
 
 @end
