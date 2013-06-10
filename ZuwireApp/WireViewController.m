@@ -24,7 +24,7 @@
 - (void)resetWireShow
 {
     self.wirePostLabel.text = @"";
-    self.wirePostLabel.text = [WiresFetcher getWireWithId:[self.wireURL absoluteString][@"post"];
+    self.wirePostLabel.text = [WiresFetcher getWireWithId:[self.wireURL absoluteString]][@"post"];
 }
 
 - (void)viewDidLoad
