@@ -19,6 +19,12 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Zuwire";
+    UIImage *composeImage = [UIImage imageNamed:@"composeWire.png"];
+    UIBarButtonItem *composeWire = [[UIBarButtonItem alloc]initWithImage:composeImage
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(compose)];
+    self.navigationItem.rightBarButtonItem = composeWire;
     self.wires = [WiresFetcher getLatestWires];
 }
 

@@ -227,6 +227,9 @@
         </class>
         <class className="mainNavController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/mainNavController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="composeWireButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
