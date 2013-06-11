@@ -33,7 +33,8 @@
     self.userFullName.text = self.wireDictionary[@"user_full_name"];
     self.userHandle.text = [NSString stringWithFormat:@"@%@", self.wireDictionary[@"user_handle"]];
     self.userAvatar.image = [WiresFetcher getUserAvatar:self.wireDictionary[@"user_avatar_url"]];
-    self.wireStats.text = @"Props: 10 Comments: 5";
+    self.wireStats.text = [NSString stringWithFormat:@"Props: %lu Comments: %lu", (unsigned long)[self.wireDictionary[@"comments"] count],
+    (unsigned long)[self.wireDictionary[@"props"] count]];
 }
 
 - (void)viewDidLoad
