@@ -19,13 +19,19 @@
 		43BBE83D1756EDBC00DDCF70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BBE83B1756EDBC00DDCF70 /* MainStoryboard.storyboard */; };
 		43BBE8481756EEA100DDCF70 /* WireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE8471756EEA100DDCF70 /* WireViewController.m */; };
 		43BBE84B1757038E00DDCF70 /* FirstWireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE84A1757038E00DDCF70 /* FirstWireViewController.m */; };
-		43BBE85117570AB000DDCF70 /* LatestWiresTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE85017570AB000DDCF70 /* LatestWiresTVC.m */; };
 		43BBE8541757137E00DDCF70 /* WiresFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE8531757137E00DDCF70 /* WiresFetcher.m */; };
 		43BBE8591759B40F00DDCF70 /* wire_active_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BBE8581759B40F00DDCF70 /* wire_active_2x.png */; };
 		43BBE85F1759BB2400DDCF70 /* mainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE85E1759BB2400DDCF70 /* mainNavController.m */; };
 		43BBE865175DA12700DDCF70 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BBE864175DA12700DDCF70 /* ProfileViewController.m */; };
 		43BBE867175DA82C00DDCF70 /* profile_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BBE866175DA82C00DDCF70 /* profile_icon.png */; };
 		43BBE86B1766901900DDCF70 /* composeWire.png in Resources */ = {isa = PBXBuildFile; fileRef = 43BBE86A1766901900DDCF70 /* composeWire.png */; };
+		DE12AD64177506230078672C /* Zuwire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE12AD62177506230078672C /* Zuwire.xcdatamodeld */; };
+		DE12AD6A1775085F0078672C /* Wire+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12AD691775085F0078672C /* Wire+Create.m */; };
+		DE12AD6D177515010078672C /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12AD6C177515010078672C /* CoreDataTableViewController.m */; };
+		DE12AD70177515890078672C /* WireCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12AD6F177515890078672C /* WireCDTVC.m */; };
+		DE12AD73177519560078672C /* LatestWireCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12AD72177519560078672C /* LatestWireCDTVC.m */; };
+		DE12AD7517751EBB0078672C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE12AD7417751EBB0078672C /* CoreData.framework */; };
+		DE12AD78177521980078672C /* Wire.m in Sources */ = {isa = PBXBuildFile; fileRef = DE12AD77177521970078672C /* Wire.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +53,6 @@
 		43BBE8471756EEA100DDCF70 /* WireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireViewController.m; sourceTree = "<group>"; };
 		43BBE8491757038E00DDCF70 /* FirstWireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstWireViewController.h; sourceTree = "<group>"; };
 		43BBE84A1757038E00DDCF70 /* FirstWireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstWireViewController.m; sourceTree = "<group>"; };
-		43BBE84F17570AB000DDCF70 /* LatestWiresTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestWiresTVC.h; sourceTree = "<group>"; };
-		43BBE85017570AB000DDCF70 /* LatestWiresTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestWiresTVC.m; sourceTree = "<group>"; };
 		43BBE8521757137E00DDCF70 /* WiresFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WiresFetcher.h; path = Fetchers/WiresFetcher.h; sourceTree = "<group>"; };
 		43BBE8531757137E00DDCF70 /* WiresFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WiresFetcher.m; path = Fetchers/WiresFetcher.m; sourceTree = "<group>"; };
 		43BBE8581759B40F00DDCF70 /* wire_active_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wire_active_2x.png; sourceTree = "<group>"; };
@@ -58,6 +62,18 @@
 		43BBE864175DA12700DDCF70 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		43BBE866175DA82C00DDCF70 /* profile_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_icon.png; sourceTree = "<group>"; };
 		43BBE86A1766901900DDCF70 /* composeWire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = composeWire.png; sourceTree = "<group>"; };
+		DE12AD63177506230078672C /* Zuwire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zuwire.xcdatamodel; sourceTree = "<group>"; };
+		DE12AD681775085F0078672C /* Wire+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wire+Create.h"; sourceTree = "<group>"; };
+		DE12AD691775085F0078672C /* Wire+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Wire+Create.m"; sourceTree = "<group>"; };
+		DE12AD6B177515010078672C /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		DE12AD6C177515010078672C /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		DE12AD6E177515890078672C /* WireCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireCDTVC.h; sourceTree = "<group>"; };
+		DE12AD6F177515890078672C /* WireCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireCDTVC.m; sourceTree = "<group>"; };
+		DE12AD71177519560078672C /* LatestWireCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestWireCDTVC.h; sourceTree = "<group>"; };
+		DE12AD72177519560078672C /* LatestWireCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestWireCDTVC.m; sourceTree = "<group>"; };
+		DE12AD7417751EBB0078672C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DE12AD76177521970078672C /* Wire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wire.h; sourceTree = "<group>"; };
+		DE12AD77177521970078672C /* Wire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wire.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE12AD7517751EBB0078672C /* CoreData.framework in Frameworks */,
 				43BBE8241756EDBC00DDCF70 /* UIKit.framework in Frameworks */,
 				43BBE8261756EDBC00DDCF70 /* Foundation.framework in Frameworks */,
 				43BBE8281756EDBC00DDCF70 /* CoreGraphics.framework in Frameworks */,
@@ -94,6 +111,7 @@
 		43BBE8221756EDBC00DDCF70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE12AD7417751EBB0078672C /* CoreData.framework */,
 				43BBE8231756EDBC00DDCF70 /* UIKit.framework */,
 				43BBE8251756EDBC00DDCF70 /* Foundation.framework */,
 				43BBE8271756EDBC00DDCF70 /* CoreGraphics.framework */,
@@ -112,15 +130,24 @@
 				43BBE83B1756EDBC00DDCF70 /* MainStoryboard.storyboard */,
 				43BBE863175DA12700DDCF70 /* ProfileViewController.h */,
 				43BBE864175DA12700DDCF70 /* ProfileViewController.m */,
-				43BBE84F17570AB000DDCF70 /* LatestWiresTVC.h */,
-				43BBE85017570AB000DDCF70 /* LatestWiresTVC.m */,
+				DE12AD6E177515890078672C /* WireCDTVC.h */,
+				DE12AD6F177515890078672C /* WireCDTVC.m */,
+				DE12AD71177519560078672C /* LatestWireCDTVC.h */,
+				DE12AD72177519560078672C /* LatestWireCDTVC.m */,
 				43BBE8521757137E00DDCF70 /* WiresFetcher.h */,
 				43BBE8531757137E00DDCF70 /* WiresFetcher.m */,
 				43BBE8461756EEA000DDCF70 /* WireViewController.h */,
 				43BBE8471756EEA100DDCF70 /* WireViewController.m */,
 				43BBE8491757038E00DDCF70 /* FirstWireViewController.h */,
 				43BBE84A1757038E00DDCF70 /* FirstWireViewController.m */,
+				DE12AD6B177515010078672C /* CoreDataTableViewController.h */,
+				DE12AD6C177515010078672C /* CoreDataTableViewController.m */,
 				43BBE82A1756EDBC00DDCF70 /* Supporting Files */,
+				DE12AD76177521970078672C /* Wire.h */,
+				DE12AD77177521970078672C /* Wire.m */,
+				DE12AD62177506230078672C /* Zuwire.xcdatamodeld */,
+				DE12AD681775085F0078672C /* Wire+Create.h */,
+				DE12AD691775085F0078672C /* Wire+Create.m */,
 			);
 			path = ZuwireApp;
 			sourceTree = "<group>";
@@ -214,10 +241,15 @@
 				43BBE8341756EDBC00DDCF70 /* AppDelegate.m in Sources */,
 				43BBE8481756EEA100DDCF70 /* WireViewController.m in Sources */,
 				43BBE84B1757038E00DDCF70 /* FirstWireViewController.m in Sources */,
-				43BBE85117570AB000DDCF70 /* LatestWiresTVC.m in Sources */,
 				43BBE8541757137E00DDCF70 /* WiresFetcher.m in Sources */,
 				43BBE85F1759BB2400DDCF70 /* mainNavController.m in Sources */,
 				43BBE865175DA12700DDCF70 /* ProfileViewController.m in Sources */,
+				DE12AD64177506230078672C /* Zuwire.xcdatamodeld in Sources */,
+				DE12AD6A1775085F0078672C /* Wire+Create.m in Sources */,
+				DE12AD6D177515010078672C /* CoreDataTableViewController.m in Sources */,
+				DE12AD70177515890078672C /* WireCDTVC.m in Sources */,
+				DE12AD73177519560078672C /* LatestWireCDTVC.m in Sources */,
+				DE12AD78177521980078672C /* Wire.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +375,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE12AD62177506230078672C /* Zuwire.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE12AD63177506230078672C /* Zuwire.xcdatamodel */,
+			);
+			currentVersion = DE12AD63177506230078672C /* Zuwire.xcdatamodel */;
+			path = Zuwire.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43BBE8181756EDBC00DDCF70 /* Project object */;
 }
