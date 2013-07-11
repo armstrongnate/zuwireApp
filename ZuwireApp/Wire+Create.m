@@ -29,7 +29,7 @@
         wire.id = wireDictionary[@"id"];
         wire.post = wireDictionary[@"post"];
         wire.userHandle = wireDictionary[@"user_handle"];
-        wire.userName = wireDictionary[@"user_name"];
+        wire.userName = wireDictionary[@"user_full_name"];
         wire.userAvatarURL = wireDictionary[@"user_avatar_url"];
         wire.commentsCount = wireDictionary[@"comments_count"];
         wire.propsCount = wireDictionary[@"props_count"];
