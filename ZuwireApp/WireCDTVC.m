@@ -48,12 +48,26 @@
  
     Wire *wire = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
-    cell.textLabel.text = wire.post;
-    cell.textLabel.font = [UIFont systemFontOfSize:12.0];
+    cell.textLabel.text = wire.userName;
+    cell.textLabel.font = [UIFont systemFontOfSize:16.0];
+    cell.detailTextLabel.text = wire.post;
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:14.0];
+    cell.detailTextLabel.numberOfLines = 0;
+    cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
     UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:wire.userAvatarURL]]];
     cell.imageView.image = image;
+    [cell.textLabel sizeToFit];
 
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    Wire *wire = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    CGSize maximumSize = CGSizeMake(296, FLT_MAX);
+    CGSize stringSize = [wire.post sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:maximumSize lineBreakMode:NSLineBreakByWordWrapping];
+
+    CGFloat height = stringSize.height < 100 ? 100 : stringSize.height + 70.0;
+    return height;
 }
 
 @end
