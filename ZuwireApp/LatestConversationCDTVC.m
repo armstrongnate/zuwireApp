@@ -1,27 +1,26 @@
 //
-//  LatestWireCDTVC.m
+//  LatestConversationCDTVC.m
 //  ZuwireApp
 //
-//  Created by Wes Bangerter on 6/21/13.
+//  Created by Nate Armstrong on 7/16/13.
 //  Copyright (c) 2013 CustomBit. All rights reserved.
 //
 
-#import "LatestWireCDTVC.h"
-#import "WiresFetcher.h"
-#import "Wire+Create.h"
-#import "ComposeWireVC.h"
+#import "LatestConversationCDTVC.h"
+#import "ConversationsFetcher.h"
+#import "Conversation+Create.h"
 
-@implementation LatestWireCDTVC
+@implementation LatestConversationCDTVC
 
 - (IBAction)refresh
 {
     [self.refreshControl beginRefreshing];
-    dispatch_queue_t fetchQ = dispatch_queue_create("Latest Wire Fetch", NULL);
+    dispatch_queue_t fetchQ = dispatch_queue_create("Latest Conversation Fetch", NULL);
     dispatch_async(fetchQ, ^{
-        NSArray *wires = [WiresFetcher getLatestWires];
+        NSArray *conversations = [ConversationsFetcher getLatestConversations];
         [self.managedObjectContext performBlock:^{
-            for (NSDictionary *wire in wires) {
-                [Wire wireWithApiInfo:wire inManagedObjectContext:self.managedObjectContext];
+            for (NSDictionary *conversation in conversations) {
+                [Conversation conversationWithApiInfo:conversation inManagedObjectContext:self.managedObjectContext];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.refreshControl endRefreshing];
@@ -32,7 +31,6 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"View did load");
     [super viewDidLoad];
     [self.refreshControl addTarget:self
                             action:@selector(refresh)
@@ -43,12 +41,6 @@
 {
     [super viewWillAppear:animated];
     if (!self.managedObjectContext) [self useApiDocument];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Compose" style:UIBarButtonItemStylePlain target:self action:@selector(composeWire)];
-}
-
-- (void)composeWire
-{
-    [self performSegueWithIdentifier:@"composeWire:" sender:self];
 }
 
 - (void)useApiDocument
@@ -59,13 +51,13 @@
     
     if(![[NSFileManager defaultManager] fileExistsAtPath:[url path]]){
         [document saveToURL:url
-            forSaveOperation:UIDocumentSaveForCreating
-           completionHandler:^(BOOL success) {
-               if (success){
-                   self.managedObjectContext = document.managedObjectContext;
-                   [self refresh];
-               }
-           }];
+           forSaveOperation:UIDocumentSaveForCreating
+          completionHandler:^(BOOL success) {
+              if (success){
+                  self.managedObjectContext = document.managedObjectContext;
+                  [self refresh];
+              }
+          }];
     } else if (document.documentState == UIDocumentStateClosed){
         [document openWithCompletionHandler:^(BOOL success) {
             if (success){
