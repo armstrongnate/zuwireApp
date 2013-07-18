@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430781C0178FA60000145BA9 /* ComposeWireVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781BF178FA60000145BA9 /* ComposeWireVC.m */; };
+		430781CF1795A83600145BA9 /* Message+API.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781CE1795A83600145BA9 /* Message+API.m */; };
+		430781DB1795AEF800145BA9 /* Conversation+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781DA1795AEF800145BA9 /* Conversation+Create.m */; };
+		430781E41795B34C00145BA9 /* ConversationCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781E31795B34C00145BA9 /* ConversationCDTVC.m */; };
+		430781E71795B95100145BA9 /* LatestConversationCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781E61795B95100145BA9 /* LatestConversationCDTVC.m */; };
+		430781F31795D4BC00145BA9 /* ConversationsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781F21795D4BC00145BA9 /* ConversationsFetcher.m */; };
+		430781F61795DB7800145BA9 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 430781F51795DB7800145BA9 /* Message.m */; };
+		433DDE0B1795E302007F8740 /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 433DDE0A1795E302007F8740 /* Conversation.m */; };
+		433DDE0E17983515007F8740 /* MessagesInConversationCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 433DDE0D17983515007F8740 /* MessagesInConversationCDTVC.m */; };
 		43BBE8241756EDBC00DDCF70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BBE8231756EDBC00DDCF70 /* UIKit.framework */; };
 		43BBE8261756EDBC00DDCF70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BBE8251756EDBC00DDCF70 /* Foundation.framework */; };
 		43BBE8281756EDBC00DDCF70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BBE8271756EDBC00DDCF70 /* CoreGraphics.framework */; };
@@ -35,6 +44,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430781BE178FA60000145BA9 /* ComposeWireVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeWireVC.h; sourceTree = "<group>"; };
+		430781BF178FA60000145BA9 /* ComposeWireVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeWireVC.m; sourceTree = "<group>"; };
+		430781CD1795A83500145BA9 /* Message+API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Message+API.h"; sourceTree = "<group>"; };
+		430781CE1795A83600145BA9 /* Message+API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Message+API.m"; sourceTree = "<group>"; };
+		430781D91795AEF800145BA9 /* Conversation+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Conversation+Create.h"; sourceTree = "<group>"; };
+		430781DA1795AEF800145BA9 /* Conversation+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Conversation+Create.m"; sourceTree = "<group>"; };
+		430781E21795B34C00145BA9 /* ConversationCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationCDTVC.h; sourceTree = "<group>"; };
+		430781E31795B34C00145BA9 /* ConversationCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationCDTVC.m; sourceTree = "<group>"; };
+		430781E51795B95100145BA9 /* LatestConversationCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestConversationCDTVC.h; sourceTree = "<group>"; };
+		430781E61795B95100145BA9 /* LatestConversationCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestConversationCDTVC.m; sourceTree = "<group>"; };
+		430781F11795D4BB00145BA9 /* ConversationsFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationsFetcher.h; sourceTree = "<group>"; };
+		430781F21795D4BC00145BA9 /* ConversationsFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationsFetcher.m; sourceTree = "<group>"; };
+		430781F41795DB7800145BA9 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		430781F51795DB7800145BA9 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		433DDE091795E302007F8740 /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		433DDE0A1795E302007F8740 /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		433DDE0C17983515007F8740 /* MessagesInConversationCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesInConversationCDTVC.h; sourceTree = "<group>"; };
+		433DDE0D17983515007F8740 /* MessagesInConversationCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesInConversationCDTVC.m; sourceTree = "<group>"; };
 		43BBE8201756EDBC00DDCF70 /* ZuwireApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZuwireApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BBE8231756EDBC00DDCF70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43BBE8251756EDBC00DDCF70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,12 +149,20 @@
 		43BBE8291756EDBC00DDCF70 /* ZuwireApp */ = {
 			isa = PBXGroup;
 			children = (
+				430781F11795D4BB00145BA9 /* ConversationsFetcher.h */,
+				430781F21795D4BC00145BA9 /* ConversationsFetcher.m */,
 				43BBE85D1759BB2400DDCF70 /* mainNavController.h */,
 				43BBE85E1759BB2400DDCF70 /* mainNavController.m */,
 				43BBE866175DA82C00DDCF70 /* profile_icon.png */,
 				43BBE86A1766901900DDCF70 /* composeWire.png */,
 				43BBE8581759B40F00DDCF70 /* wire_active_2x.png */,
 				43BBE83B1756EDBC00DDCF70 /* MainStoryboard.storyboard */,
+				430781E21795B34C00145BA9 /* ConversationCDTVC.h */,
+				430781E31795B34C00145BA9 /* ConversationCDTVC.m */,
+				430781E51795B95100145BA9 /* LatestConversationCDTVC.h */,
+				430781E61795B95100145BA9 /* LatestConversationCDTVC.m */,
+				430781BE178FA60000145BA9 /* ComposeWireVC.h */,
+				430781BF178FA60000145BA9 /* ComposeWireVC.m */,
 				43BBE863175DA12700DDCF70 /* ProfileViewController.h */,
 				43BBE864175DA12700DDCF70 /* ProfileViewController.m */,
 				DE12AD6E177515890078672C /* WireCDTVC.h */,
@@ -142,12 +177,22 @@
 				43BBE84A1757038E00DDCF70 /* FirstWireViewController.m */,
 				DE12AD6B177515010078672C /* CoreDataTableViewController.h */,
 				DE12AD6C177515010078672C /* CoreDataTableViewController.m */,
-				43BBE82A1756EDBC00DDCF70 /* Supporting Files */,
 				DE12AD76177521970078672C /* Wire.h */,
 				DE12AD77177521970078672C /* Wire.m */,
+				430781CD1795A83500145BA9 /* Message+API.h */,
+				430781CE1795A83600145BA9 /* Message+API.m */,
+				430781D91795AEF800145BA9 /* Conversation+Create.h */,
+				430781DA1795AEF800145BA9 /* Conversation+Create.m */,
+				430781F41795DB7800145BA9 /* Message.h */,
+				430781F51795DB7800145BA9 /* Message.m */,
+				433DDE091795E302007F8740 /* Conversation.h */,
+				433DDE0A1795E302007F8740 /* Conversation.m */,
 				DE12AD62177506230078672C /* Zuwire.xcdatamodeld */,
+				433DDE0C17983515007F8740 /* MessagesInConversationCDTVC.h */,
+				433DDE0D17983515007F8740 /* MessagesInConversationCDTVC.m */,
 				DE12AD681775085F0078672C /* Wire+Create.h */,
 				DE12AD691775085F0078672C /* Wire+Create.m */,
+				43BBE82A1756EDBC00DDCF70 /* Supporting Files */,
 			);
 			path = ZuwireApp;
 			sourceTree = "<group>";
@@ -250,6 +295,15 @@
 				DE12AD70177515890078672C /* WireCDTVC.m in Sources */,
 				DE12AD73177519560078672C /* LatestWireCDTVC.m in Sources */,
 				DE12AD78177521980078672C /* Wire.m in Sources */,
+				430781C0178FA60000145BA9 /* ComposeWireVC.m in Sources */,
+				430781CF1795A83600145BA9 /* Message+API.m in Sources */,
+				430781DB1795AEF800145BA9 /* Conversation+Create.m in Sources */,
+				430781E41795B34C00145BA9 /* ConversationCDTVC.m in Sources */,
+				430781E71795B95100145BA9 /* LatestConversationCDTVC.m in Sources */,
+				430781F31795D4BC00145BA9 /* ConversationsFetcher.m in Sources */,
+				430781F61795DB7800145BA9 /* Message.m in Sources */,
+				433DDE0B1795E302007F8740 /* Conversation.m in Sources */,
+				433DDE0E17983515007F8740 /* MessagesInConversationCDTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

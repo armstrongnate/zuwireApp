@@ -11,6 +11,23 @@
 
 @implementation ConversationCDTVC
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = nil;
+    
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        indexPath = [self.tableView indexPathForCell:sender];
+        if (indexPath) {
+            if ([segue.identifier isEqualToString:@"setConversation:"]) {
+                if ([segue.destinationViewController respondsToSelector:@selector(setConversation:)]) {
+                    Conversation *conversation = [self.fetchedResultsController objectAtIndexPath:indexPath];
+                    [segue.destinationViewController performSelector:@selector(setConversation:) withObject:conversation];
+                }
+            }
+        }
+    }
+}
+
 - (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
     _managedObjectContext = managedObjectContext;

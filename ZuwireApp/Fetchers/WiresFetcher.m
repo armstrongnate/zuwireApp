@@ -12,7 +12,7 @@
 
 + (NSDictionary *)getWireWithId:(NSString *)wireId
 {
-    NSString *wiresUrlString = [NSString stringWithFormat:@"%@/%@", @"http://zuwire.com.dev/api/v1/wires", wireId];
+    NSString *wiresUrlString = [NSString stringWithFormat:@"%@/%@", @"http://zuwire.com.10.0.1.7.xip.io/api/v1/wires", wireId];
     NSURL *wiresUrl = [NSURL URLWithString:wiresUrlString];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:wiresUrl];
@@ -26,7 +26,7 @@
 
 + (NSArray *)getLatestWires
 {
-    NSURL *wiresUrl = [NSURL URLWithString:@"http://zuwire.com.dev/api/v1/wires"];
+    NSURL *wiresUrl = [NSURL URLWithString:@"http://zuwire.com.10.0.1.7.xip.io/api/v1/wires"];
 
     NSData *jsonData = [NSData dataWithContentsOfURL:wiresUrl];
 

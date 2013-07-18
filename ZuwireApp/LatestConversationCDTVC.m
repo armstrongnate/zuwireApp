@@ -45,6 +45,7 @@
 
 - (void)useApiDocument
 {
+    NSLog(@"Using API Document");
     NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     url = [url URLByAppendingPathComponent:@"API Document"];
     UIManagedDocument *document = [[UIManagedDocument alloc] initWithFileURL:url];

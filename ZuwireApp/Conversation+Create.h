@@ -13,4 +13,7 @@
 + (Conversation *)conversationWithApiInfo:(NSDictionary *)conversationDictionary
               inManagedObjectContext:(NSManagedObjectContext *)context;
 
+- (Conversation *)updateConversationAttributes:(NSDictionary *)conversationDictionary
+                        inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

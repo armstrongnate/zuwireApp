@@ -12,7 +12,7 @@
 
 + (NSArray *)getLatestConversations
 {
-    NSURL *wiresUrl = [NSURL URLWithString:@"http://zuwire.com.dev/api/v1/conversations"];
+    NSURL *wiresUrl = [NSURL URLWithString:@"http://zuwire.com.10.0.1.7.xip.io/api/v1/conversations"];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:wiresUrl];
     

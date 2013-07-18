@@ -23,27 +23,37 @@
     NSArray *matches = [context executeFetchRequest:request error:&error];
     
     if (!matches || [matches count] > 1) {
-        // handle error
+        // handle errors
     } else if (![matches count]) {
         conversation = [NSEntityDescription insertNewObjectForEntityForName:@"Conversation" inManagedObjectContext:context];
-        conversation.unique = conversationDictionary[@"id"];
-        conversation.snippet = conversationDictionary[@"snippet"];
-        conversation.updatedAt = conversationDictionary[@"last_message_at"];
-        conversation.partnerId = conversationDictionary[@"user"][@"id"];
-        conversation.partnerName = conversationDictionary[@"user"][@"name"];
-        conversation.partnerAvatarURL = conversationDictionary[@"user"][@"avatar_url"];
-        for (NSDictionary *messageDictionary in conversationDictionary[@"messages"])
-        {
-            Message *message = [Message messageWithApiInfo:messageDictionary inManagedObjectContext:context];
-            message.conversation = conversation;
-        }
+        [conversation updateConversationAttributes:conversationDictionary inManagedObjectContext:context];
+        
     } else {
         conversation = [matches lastObject];
+        if (![(NSString*)conversationDictionary[@"last_message_at"] isEqualToString:conversation.updatedAt]) {
+            [conversation updateConversationAttributes:conversationDictionary inManagedObjectContext:context];
+        }
     }
     
-    
-    
     return conversation;
+}
+
+- (Conversation *)updateConversationAttributes:(NSDictionary *)conversationDictionary
+            inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    self.unique = conversationDictionary[@"id"];
+    self.snippet = conversationDictionary[@"snippet"];
+    self.updatedAt = conversationDictionary[@"last_message_at"];
+    self.partnerId = conversationDictionary[@"user"][@"id"];
+    self.partnerName = conversationDictionary[@"user"][@"name"];
+    self.partnerAvatarURL = conversationDictionary[@"user"][@"avatar_url"];
+    for (NSDictionary *messageDictionary in conversationDictionary[@"messages"])
+    {
+        Message *message = [Message messageWithApiInfo:messageDictionary inManagedObjectContext:context];
+        message.conversation = self;
+    }
+
+    return self;
 }
 
 @end
